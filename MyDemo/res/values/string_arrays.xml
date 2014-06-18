@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="big_chapters">
+        <item>Activity</item>
+        <item>View</item>
+        <item>Service</item>
+        <item>数据存储</item>
+        <item>ContentProvider</item>
+        <item>BroadcastReceiver</item>
+    </string-array>
+    <string-array name="view_chapters">
+        <item>GridView</item>
+    </string-array>
+    <string-array name="activity_chapters">
+        <item>生命周期</item>
+        <item>StartActivity和Intent</item>
+    </string-array>
+    <string-array name="service_chapters">
+        <item>Start Service</item>
+        <item>Bind Service</item>
+    </string-array>
+    <string-array name="data_storage_chapters">
+        <item>Sqlite3</item>
+        <item>SharedPreferences</item>
+        <item>File</item>
+        <item>Internet</item>
+    </string-array>
+    <string-array name="content_provider_chapters">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+     <string-array name="broad_cast_receiver_chapters">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+</resources>
