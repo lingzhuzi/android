@@ -10,6 +10,11 @@
     <string name="action_contact">Contact</string>
     <string name="action_about">About</string>
     <string name="no_email">没有找到可以发送邮件的应用</string>
+
+    <string name="life_cycle_btn_intro">点击下面的按钮来测试Activity的生命周期\n暂停：启动一个半透明的Activity\n停止：启动一个不透明的Activity\n销毁：结束当前Activity</string>
+    <string name="life_cycle_btn_pause">暂停</string>
+    <string name="life_cycle_btn_stop">停止</string>
+    <string name="life_cycle_btn_finish">销毁</string>
     
     <!-- activity titles -->
     <string name="title_activity_activity_chapter">ActivityChapterActivity</string>
@@ -18,5 +23,6 @@
     <string name="title_activity_data_storage_chapter">ActivityChapterActivity</string>
     <string name="title_activity_content_provider_chapter">ActivityChapterActivity</string>
     <string name="title_activity_broad_cast_receiver_chapter">ActivityChapterActivity</string>
+    <string name="title_activity_life_cycle">LifeCycleActivity</string>
 
 </resources>

@@ -37,7 +37,7 @@ public class MainActivity extends AbsChapterActivity {
 			// TODO add setting page
 			return true;
 		} else if(id == R.id.action_github) {
-			Uri uriUrl = Uri.parse("https://github.com/lingzhuzi/my-android-apps/myDemo");
+			Uri uriUrl = Uri.parse("https://github.com/lingzhuzi/my-android-apps/tree/master/MyDemo");
 			Intent launchBrowser = new Intent(Intent.ACTION_VIEW, uriUrl); 
 			startActivity(launchBrowser);
 			return true;

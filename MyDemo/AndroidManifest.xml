@@ -46,6 +46,20 @@
             android:name="com.kevin.demo.BroadcastReceiverChapterActivity"
             android:label="@string/title_activity_broad_cast_receiver_chapter" >
         </activity>
+        <activity
+            android:name="com.kevin.demo.activity.LifeCycleActivity"
+            android:label="@string/title_activity_life_cycle" >
+        </activity>
+        <activity
+            android:name="com.kevin.demo.activity.BlankActivity"
+            android:theme="@style/Transparent"
+            android:label="@string/title_activity_life_cycle" >
+        </activity>
+        <activity
+            android:name="com.kevin.demo.activity.Blank2Activity"
+            android:label="@string/title_activity_life_cycle" >
+        </activity>
+        
     </application>
 
 </manifest>

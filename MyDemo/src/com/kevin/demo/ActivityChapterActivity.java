@@ -1,5 +1,7 @@
 package com.kevin.demo;
 
+import com.kevin.demo.activity.LifeCycleActivity;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -20,7 +22,7 @@ public class ActivityChapterActivity extends AbsChapterActivity {
 		Class<?> clazz = null;
 		switch (index) {
 		case 0:
-			clazz = ActivityChapterActivity.class;
+			clazz = LifeCycleActivity.class;
 			break;
 		case 1:
 			break;
