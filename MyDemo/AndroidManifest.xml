@@ -52,14 +52,25 @@
         </activity>
         <activity
             android:name="com.kevin.demo.activity.BlankActivity"
-            android:theme="@style/Transparent"
-            android:label="@string/title_activity_life_cycle" >
+            android:label="@string/title_activity_life_cycle"
+            android:theme="@style/Transparent" >
         </activity>
         <activity
             android:name="com.kevin.demo.activity.Blank2Activity"
             android:label="@string/title_activity_life_cycle" >
         </activity>
-        
+        <activity
+            android:name="com.kevin.demo.activity.StartActivity"
+            android:label="@string/title_activity_start" >
+        </activity>
+        <activity
+            android:name="com.kevin.demo.activity.ResultActivity"
+            android:label="@string/title_activity_result" >
+        </activity>
+        <activity
+            android:name="com.kevin.demo.activity.IntentActivity"
+            android:label="@string/title_activity_intent" >
+        </activity>
     </application>
 
 </manifest>

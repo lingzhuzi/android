@@ -1,6 +1,8 @@
 package com.kevin.demo;
 
+import com.kevin.demo.activity.IntentActivity;
 import com.kevin.demo.activity.LifeCycleActivity;
+import com.kevin.demo.activity.StartActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -25,8 +27,10 @@ public class ActivityChapterActivity extends AbsChapterActivity {
 			clazz = LifeCycleActivity.class;
 			break;
 		case 1:
+			clazz = StartActivity.class;
 			break;
 		case 2:
+			clazz = IntentActivity.class;
 			break;
 		case 3:
 			break;
@@ -41,7 +45,7 @@ public class ActivityChapterActivity extends AbsChapterActivity {
 
 		}
 		intent.setClass(ActivityChapterActivity.this, clazz);
-		ActivityChapterActivity.this.startActivity(intent);
+		startActivity(intent);
 	}
 
 

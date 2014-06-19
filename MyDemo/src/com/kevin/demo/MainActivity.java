@@ -89,7 +89,7 @@ public class MainActivity extends AbsChapterActivity {
 			break;
 		}
 		intent.setClass(MainActivity.this, clazz);
-		MainActivity.this.startActivity(intent);
+		startActivity(intent);
 	}
 
 }

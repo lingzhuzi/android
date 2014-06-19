@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">MyDemo</string>
+    <string name="app_name">"Kevin's Demo"</string>
     <string name="hello_world">Hello world!</string>
 
     <!-- actions -->
@@ -10,19 +10,28 @@
     <string name="action_contact">Contact</string>
     <string name="action_about">About</string>
     <string name="no_email">没有找到可以发送邮件的应用</string>
-
-    <string name="life_cycle_btn_intro">点击下面的按钮来测试Activity的生命周期\n暂停：启动一个半透明的Activity\n停止：启动一个不透明的Activity\n销毁：结束当前Activity</string>
+    <string name="life_cycle_btn_intro">        点击下面的按钮来测试Activity的生命周期\n
+        暂停：启动一个半透明的Activity，当前Activity应该进入暂停状态\n
+        停止：启动一个不透明的Activity，当前Activity应该进入停止状态\n
+        销毁：调用finishi()结束当前Activity</string>
     <string name="life_cycle_btn_pause">暂停</string>
     <string name="life_cycle_btn_stop">停止</string>
     <string name="life_cycle_btn_finish">销毁</string>
-    
+    <string name="sure_and_back">确定并返回</string>
+    <string name="result_tip">请点击下面的按钮启动一个Activity，查看是否会返回结果。返回结果将在这里显示</string>
+    <string name="start_activity">startActivity</string>
+    <string name="start_activity_for_result">startActivityForResult</string>
+
     <!-- activity titles -->
-    <string name="title_activity_activity_chapter">ActivityChapterActivity</string>
-    <string name="title_activity_view_chapter">ActivityChapterActivity</string>
-    <string name="title_activity_service_chapter">ActivityChapterActivity</string>
-    <string name="title_activity_data_storage_chapter">ActivityChapterActivity</string>
-    <string name="title_activity_content_provider_chapter">ActivityChapterActivity</string>
-    <string name="title_activity_broad_cast_receiver_chapter">ActivityChapterActivity</string>
-    <string name="title_activity_life_cycle">LifeCycleActivity</string>
+    <string name="title_activity_activity_chapter">Activity</string>
+    <string name="title_activity_view_chapter">View</string>
+    <string name="title_activity_service_chapter">Service</string>
+    <string name="title_activity_data_storage_chapter">Data Storage</string>
+    <string name="title_activity_content_provider_chapter">Content Provider</string>
+    <string name="title_activity_broad_cast_receiver_chapter">Broadcast Receiver</string>
+    <string name="title_activity_life_cycle">生命周期测试</string>
+    <string name="title_activity_start">StartActivity</string>
+    <string name="title_activity_result">ResultActivity</string>
+    <string name="title_activity_intent">Intent</string>
 
 </resources>

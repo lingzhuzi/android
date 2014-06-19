@@ -7,7 +7,7 @@ import android.os.Bundle;
 
 public class Blank2Activity extends ActionBarActivity {
 
-	private static final String TAG = "BlankActivity";
+	private static final String TAG = "Blank2Activity";
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
