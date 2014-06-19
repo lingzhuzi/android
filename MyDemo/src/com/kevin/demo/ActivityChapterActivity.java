@@ -44,10 +44,11 @@ public class ActivityChapterActivity extends AbsChapterActivity {
 			break;
 
 		}
-		intent.setClass(ActivityChapterActivity.this, clazz);
-		startActivity(intent);
+		if (clazz != null) {
+			intent.setClass(ActivityChapterActivity.this, clazz);
+			startActivity(intent);
+		}
 	}
-
 
 	@Override
 	public int getChapterArrayId() {

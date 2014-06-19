@@ -20,7 +20,6 @@ public class ServiceChapterActivity extends AbsChapterActivity {
 		Class<?> clazz = null;
 		switch (index) {
 		case 0:
-			clazz = ServiceChapterActivity.class;
 			break;
 		case 1:
 			break;
@@ -38,10 +37,11 @@ public class ServiceChapterActivity extends AbsChapterActivity {
 			break;
 
 		}
-		intent.setClass(ServiceChapterActivity.this, clazz);
-		ServiceChapterActivity.this.startActivity(intent);
+		if (clazz != null) {
+			intent.setClass(ServiceChapterActivity.this, clazz);
+			ServiceChapterActivity.this.startActivity(intent);
+		}
 	}
-
 
 	@Override
 	public int getChapterArrayId() {

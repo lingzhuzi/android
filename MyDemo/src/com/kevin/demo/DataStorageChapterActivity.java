@@ -20,7 +20,6 @@ public class DataStorageChapterActivity extends AbsChapterActivity {
 		Class<?> clazz = null;
 		switch (index) {
 		case 0:
-			clazz = DataStorageChapterActivity.class;
 			break;
 		case 1:
 			break;
@@ -38,10 +37,11 @@ public class DataStorageChapterActivity extends AbsChapterActivity {
 			break;
 
 		}
-		intent.setClass(DataStorageChapterActivity.this, clazz);
-		DataStorageChapterActivity.this.startActivity(intent);
+		if (clazz != null) {
+			intent.setClass(DataStorageChapterActivity.this, clazz);
+			DataStorageChapterActivity.this.startActivity(intent);
+		}
 	}
-
 
 	@Override
 	public int getChapterArrayId() {

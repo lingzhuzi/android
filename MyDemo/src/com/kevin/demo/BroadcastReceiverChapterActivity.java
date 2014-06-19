@@ -38,10 +38,11 @@ public class BroadcastReceiverChapterActivity extends AbsChapterActivity {
 			break;
 
 		}
-		intent.setClass(BroadcastReceiverChapterActivity.this, clazz);
-		BroadcastReceiverChapterActivity.this.startActivity(intent);
+		if (clazz != null) {
+			intent.setClass(BroadcastReceiverChapterActivity.this, clazz);
+			BroadcastReceiverChapterActivity.this.startActivity(intent);
+		}
 	}
-
 
 	@Override
 	public int getChapterArrayId() {

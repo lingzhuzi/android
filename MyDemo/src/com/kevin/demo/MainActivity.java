@@ -36,15 +36,14 @@ public class MainActivity extends AbsChapterActivity {
 		if (id == R.id.action_settings) {
 			// TODO add setting page
 			return true;
-		} else if(id == R.id.action_github) {
+		} else if (id == R.id.action_github) {
 			Uri uriUrl = Uri.parse("https://github.com/lingzhuzi/my-android-apps/tree/master/MyDemo");
-			Intent launchBrowser = new Intent(Intent.ACTION_VIEW, uriUrl); 
+			Intent launchBrowser = new Intent(Intent.ACTION_VIEW, uriUrl);
 			startActivity(launchBrowser);
 			return true;
-		} else if(id == R.id.action_contact) {
+		} else if (id == R.id.action_contact) {
 			final Intent email = new Intent(android.content.Intent.ACTION_SENDTO);
-			String uriText = "mailto:qdyuyh@126.com" +
-					"?subject=" + URLEncoder.encode("my-android-apps/myDemo Feedback"); 
+			String uriText = "mailto:qdyuyh@126.com" + "?subject=" + URLEncoder.encode("my-android-apps/myDemo Feedback");
 			email.setData(Uri.parse(uriText));
 			try {
 				startActivity(email);
@@ -52,10 +51,10 @@ public class MainActivity extends AbsChapterActivity {
 				Toast.makeText(this, R.string.no_email, Toast.LENGTH_SHORT).show();
 			}
 			return true;
-		} else if(id == R.id.action_about) {
+		} else if (id == R.id.action_about) {
 			// TODO add about page
 			return true;
-		} 
+		}
 		return super.onOptionsItemSelected(item);
 	}
 
@@ -88,8 +87,10 @@ public class MainActivity extends AbsChapterActivity {
 			clazz = BroadcastReceiverChapterActivity.class;
 			break;
 		}
-		intent.setClass(MainActivity.this, clazz);
-		startActivity(intent);
+		if (clazz != null) {
+			intent.setClass(MainActivity.this, clazz);
+			startActivity(intent);
+		}
 	}
 
 }

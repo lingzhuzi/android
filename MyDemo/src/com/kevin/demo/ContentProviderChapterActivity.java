@@ -20,7 +20,6 @@ public class ContentProviderChapterActivity extends AbsChapterActivity {
 		Class<?> clazz = null;
 		switch (index) {
 		case 0:
-			clazz = ContentProviderChapterActivity.class;
 			break;
 		case 1:
 			break;
@@ -38,10 +37,11 @@ public class ContentProviderChapterActivity extends AbsChapterActivity {
 			break;
 
 		}
-		intent.setClass(ContentProviderChapterActivity.this, clazz);
-		ContentProviderChapterActivity.this.startActivity(intent);
+		if (clazz != null) {
+			intent.setClass(ContentProviderChapterActivity.this, clazz);
+			ContentProviderChapterActivity.this.startActivity(intent);
+		}
 	}
-
 
 	@Override
 	public int getChapterArrayId() {
